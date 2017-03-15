@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -12,6 +14,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
+    Angular2FontawesomeModule,
     HttpModule
   ],
   providers: [],
