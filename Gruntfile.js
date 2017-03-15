@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {                         // Liste des fichiers
-                    'src/styles.css': 'scss/style.scss'       // 'destination': 'source'
+                    'src/app/app.component.css': 'scss/style.scss'       // 'destination': 'source'
                 }
             }
         },

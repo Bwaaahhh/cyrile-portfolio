@@ -1,24 +1,46 @@
-header{
-    margin-bottom: 10%;
+main {
+  font-family: montserrat;
 }
-header h1{
-    text-transform: uppercase;
+main .color {
+  color: red;
 }
-header i{
-    margin-top: 7.5%;
+main #premierPres {
+  margin-top: 15%;
+}
+main #deuxiemePres {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+main #troisiemePres {
+  margin-bottom: 5%;
+}
+main #troisiemePres #dernierePhrase {
+  margin-bottom: 8%;
 }
 
+header {
+  margin-bottom: 10%;
+}
+header h1 {
+  text-transform: uppercase;
+}
+header i {
+  margin-top: 7.5%;
+}
 
-
-footer{
-    background-color: black;
-    color: white;
-    width: 100%;
-    font-size: 0.65rem;
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  font-size: 0.65rem;
+  padding-top: 7%;
+  padding-bottom: 5%;
 }
 footer i {
-    display: inline-block;
+  display: inline-block;
 }
-footer p{
-    display: inline-block;
+footer p {
+  display: inline-block;
 }
+
+/*# sourceMappingURL=app.component.css.map */

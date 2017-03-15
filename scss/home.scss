@@ -1,0 +1,19 @@
+main{
+    font-family: montserrat;
+    .color{
+        color : red;
+    }
+    #premierPres{
+        margin-top: 15%;
+    }
+    #deuxiemePres{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #troisiemePres{
+        margin-bottom: 5%;
+        #dernierePhrase{
+            margin-bottom: 8%;
+        }
+    }
+}
