@@ -2,8 +2,11 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'skill',
-  template: `<strong>My page content here</strong>`
+  templateUrl: './skill.component.html',
+  styleUrls: ['../../app.component.css']
 })
 export class SkillComponent {
-
+    testClick() {
+        console.log('pouet');
+    }
 }

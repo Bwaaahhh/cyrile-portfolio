@@ -1,10 +1,15 @@
-import {Component} from '@angular/core';
+import {Component, Directive, ElementRef, Input} from '@angular/core';
 
 @Component({
-  selector: 'home',
-  templateUrl: './home.component.html',
-  styleUrls: ['../../app.component.css']
+    moduleId: module.id,
+    selector: 'home',
+    templateUrl: './home.component.html',
+    styleUrls: ['../../app.component.css']
 })
-export class HomeComponent {
 
+export class HomeComponent {
+    color: string;
+    testClick() {
+        console.log('pouet');
+    }
 }

@@ -36,6 +36,9 @@ footer {
   padding-top: 7%;
   padding-bottom: 5%;
 }
+footer #lien {
+  margin-bottom: 5%;
+}
 footer i {
   display: inline-block;
 }

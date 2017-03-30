@@ -2,6 +2,8 @@ import {ModuleWithProviders}  from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {HomeComponent} from './page/home/home.component';
 import {SkillComponent} from './page/skill/skill.component';
+import {ContactComponent} from './page/contact/contact.component';
+import {ProjetComponent} from './page/projet/projet.component';
 
 
 // Route Configuration
@@ -18,6 +20,14 @@ export const routes: Routes = [
     {
         path: 'skill',
         component: SkillComponent
+    },
+    {
+        path: 'contact',
+        component: ContactComponent
+    },
+    {
+        path: 'projet',
+        component: ProjetComponent
     }
 
 ];
