@@ -1,7 +1,7 @@
 <main>
     <div class="container">
         <div class="row" id="premierPres">
-            <p lalala class="col-xs-12 text-center">Hello, moi c'est Cyril Etievant.</p>
+            <p (click)="testClick()" class="col-xs-12 text-center">Hello, moi c'est Cyril Etievant.</p>
             <p class="col-xs-12 text-center"><span class="color">App & Web développeur</span></p>
             <p class="col-xs-12 text-center">près de Besancon en Franche-comté</p>
         </div>
@@ -13,7 +13,7 @@
         </div>
         <div class="row" id="troisiemePres">
             <p class="col-xs-12 text-center">Si vous souhaitez collaborer avec moi pour un</p>
-            <p class="col-xs-12 text-center" id="dernierePhrase">futur projet, n'hésitez pas à me <span class="color">contacter</span> :)</p>
+            <p class="col-xs-12 text-center" id="dernierePhrase">futur projet, n'hésitez pas à me <span routerLink="/contact" routerLinkActive="active" class="color">contacter</span> :)</p>
             <p class="col-xs-12 text-center">//</p>
         </div>
     </div>

@@ -8,7 +8,6 @@ import {Component, Directive, ElementRef, Input} from '@angular/core';
 })
 
 export class HomeComponent {
-    color: string;
     testClick() {
         console.log('pouet');
     }

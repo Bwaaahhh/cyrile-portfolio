@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         sass: {                              // Nom de la tâche
             dist: {                            // Nom de la sous-tâche
                 options: {                       // Options
-                    style: 'expanded'
+                    style: 'compressed'
                 },
                 files: {                         // Liste des fichiers
                     'src/app/app.component.css': 'scss/style.scss'       // 'destination': 'source'

@@ -1,5 +1,5 @@
 main {
-  font-family: montserrat;
+  font-family: Trebuchet;
 }
 main .color {
   color: red;
@@ -24,6 +24,9 @@ header {
 header h1 {
   text-transform: uppercase;
 }
+header img {
+  margin-top: 20%;
+}
 header i {
   margin-top: 7.5%;
 }
@@ -44,6 +47,98 @@ footer i {
 }
 footer p {
   display: inline-block;
+}
+footer .iconegfooter {
+  margin-left: 5%;
+}
+
+#skill {
+  text-align: center;
+}
+#skill .iconeg {
+  margin-left: 5%;
+}
+#skill p {
+  font-family: Trebuchet;
+}
+#skill #foundation {
+  margin-left: 3px;
+}
+
+#contact {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: Trebuchet;
+  margin-top: 5%;
+}
+#contact p {
+  display: inline;
+}
+#contact input {
+  display: inline;
+  color: red;
+  font-size: 1rem;
+  width: 35%;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid red;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+#contact i {
+  color: red;
+  font-size: 1rem;
+  margin-right: 1%;
+}
+#contact .error {
+  font-size: 0.8rem;
+}
+#contact #obligation {
+  display: block;
+}
+#contact #formPremiere {
+  margin-top: 5%;
+}
+#contact #formTroisieme {
+  margin-bottom: 5%;
+}
+#contact #formTroisieme select {
+  display: inline;
+  width: 35%;
+  height: auto;
+  color: red;
+  border: none;
+  padding-right: 0;
+  box-shadow: none;
+  font-size: 1rem;
+  appearance: none;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  background: url(./../assets/images/arrow-down.png) no-repeat right;
+  background-position-x: 80px;
+}
+#contact #formTroisieme select:focus {
+  outline: none;
+  border: none;
+}
+#contact .bye {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#contact #formButton {
+  font-size: 0.8rem;
+  margin-top: 7%;
+  margin-bottom: 5%;
+}
+#contact #formButton button {
+  text-transform: uppercase;
+  padding-bottom: 3%;
+  border-bottom: 5px solid transparent;
+}
+#contact #formButton button:hover {
+  color: red;
+  border-bottom: 5px solid red;
 }
 
 /*# sourceMappingURL=app.component.css.map */
