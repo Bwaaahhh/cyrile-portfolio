@@ -1,17 +1,14 @@
 import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule }  from '@angular/common';
-
 import { HomeComponent } from './home.component';
 
 
 @NgModule({
-  imports: [
-    CommonModule,
-    BrowserModule
-  ],
-  declarations: [
-    HomeComponent
+    imports: [
+      CommonModule
+    ],
+    declarations: [
+        HomeComponent
     ],
     bootstrap: [ HomeComponent ]
 })
