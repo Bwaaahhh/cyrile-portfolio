@@ -1,4 +1,88 @@
-<main>
+<!-- <main>
+    <div class="container">
+        <h2>User data</h2>
+        <form [formGroup]="userForm">
+            <div class="form-group">
+                <label>name</label>
+                <input type="text" class="form-control" formControlName="name">
+            </div>
+            <div class="form-group">
+                <label>email</label>
+                <input type="text" class="form-control" formControlName="email">
+            </div>
+            <div class="" formGroupName="adresse">
+                <div class="form-group">
+                    <label>Rue</label>
+                    <input type="text" class="form-control" formControlName="rue">
+                </div>
+                <div class="form-group">
+                    <label>Ville</label>
+                    <input type="text" class="form-control" formControlName="ville">
+                </div>
+                <div class="form-group">
+                    <label>Cp</label>
+                    <input type="text" class="form-control" formControlName="cp">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</main> -->
+
+
+
+
+
+
+<!-- <main>
+    <div class="container">
+        <h2>User data </h2>
+        <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" novalidate>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" #nameRef="ngModel" maxlength="14" minlength="4" required name="name" value="" class="form-control" ngModel >
+                <div class="alert alert-danger" *ngIf="nameRef.errors && (nameRef.dirty || nameRef.touched)">
+                    <div class="" [hidden]="!nameRef.errors.required">
+                        Please enter a name
+                    </div>
+                    <div class="" [hidden]="!nameRef.errors.minlength">
+                        Please enter atleast 4 characters
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" value="" class="form-control" ngModel >
+            </div>
+            <div class="" ngModelGroup="adresse">
+                <div class="form-group">
+                    <label for="street">Street</label>
+                    <input type="text" name="street" value="" class="form-control" ngModel >
+                </div>
+                <div class="form-group">
+                    <label for=city>City</label>
+                    <input type="text" name="city" value="" class="form-control" ngModel >
+                </div>
+                <div class="form-group">
+                    <label for="cp">PostalCode</label>
+                    <input type="text" #refPincode="ngModel" pattern="^[0-9]{5}$" name="cp" value="" class="form-control" ngModel >
+                    <div class="alert alert-danger" *ngIf="refPincode.errors && (refPincode.dirty || refPincode.touched)">
+                        <div class="" [hidden]="!refPincode.errors.pattern">
+                            Please enter a five digit number
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button [disabled]="!userForm.form.valid" type="submit" class="btn btn-primary"name="button">Submit</button>
+        </form>
+    </div>
+</main> -->
+ -->
+
+
+
+
+<!-- <main>
     <div id="contact" class="container">
         <div class="row">
             <form class="" action="" method="">
@@ -50,4 +134,4 @@
             </form>
         </div>
     </div>
-</main>
+</main> -->

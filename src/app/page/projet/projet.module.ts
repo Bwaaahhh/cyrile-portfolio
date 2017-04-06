@@ -1,18 +1,19 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule }  from '@angular/common';
-
-import { HomeComponent } from './home.component';
+import { ProjetComponent } from './projet.component';
+import { HttpModule }    from '@angular/http';
 
 
 @NgModule({
   imports: [
     CommonModule,
-    BrowserModule
+    BrowserModule,
+    HttpModule
   ],
   declarations: [
-    HomeComponent
+    ProjetComponent
     ],
-    bootstrap: [ HomeComponent ]
+    bootstrap: [ ProjetComponent ]
 })
-export class HomeModule {}
+export class ProjetModule {}
