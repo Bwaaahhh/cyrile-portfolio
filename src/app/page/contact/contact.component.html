@@ -4,7 +4,7 @@
             <p class="col-xs-12 text-center">Vous desirez discuter un moment?</p>
             <p class="col-xs-12 text-center">Vous etes sur au bon endroit ?</p>
         </div>
-        <form [formGroup]="userForm" method="POST" action="./email.php" (ngSubmit)="onSubmit()">
+        <form [formGroup]="userForm" method="POST" action="mailto:cy.etievant@gmail.com" (ngSubmit)="onSubmit()">
             <div class="form-group">
                 <label>Nom</label>
                 <input type="text" #refNom class="form-control" formControlName="nom">
