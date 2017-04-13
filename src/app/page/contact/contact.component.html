@@ -4,7 +4,7 @@
             <p class="col-xs-12 text-center">Vous desirez discuter un moment?</p>
             <p class="col-xs-12 text-center">Vous etes sur au bon endroit ?</p>
         </div>
-        <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <form [formGroup]="userForm" method="POST" action="mail.php" (ngSubmit)="onSubmit()">
             <div class="form-group">
                 <label>Nom</label>
                 <input type="text" #refNom class="form-control" formControlName="nom">
@@ -24,10 +24,10 @@
                 <input type="text" #refPrenom class="form-control" formControlName="prenom">
                 <b>{{refPrenom.className}}</b>
                 <div class="alert alert-danger" *ngIf="userForm.controls['prenom'].hasError('required') && ( userForm.controls['prenom'].touched)">
-                    Merci de rentrer un prenom
+                    Merci de rentrer un prénom
                 </div>
                 <div class="alert alert-danger" *ngIf="userForm.controls['prenom'].hasError('minlength')">
-                    Il faut écrire un prenom avec plus de deux characteres
+                    Il faut écrire un prénom avec plus de deux characteres
                 </div>
                 <div class="alert alert-danger" *ngIf="userForm.controls['prenom'].hasError('maxlength')">
                     Vous n'avez pas un diminutif?
@@ -35,24 +35,15 @@
             </div>
             <div class="form-group">
                 <label>email</label>
-                <input type="text" class="form-control" formControlName="email">
+                <input type="email" class="form-control" formControlName="email">
             </div>
-            <div class="" formGroupName="adresse">
-                <div class="form-group">
-                    <label>Rue</label>
-                    <input type="text" class="form-control" formControlName="rue">
-                </div>
-                <div class="form-group">
-                    <label>Ville</label>
-                    <input type="text" class="form-control" formControlName="ville">
-                </div>
-                <div class="form-group">
-                    <label>Cp</label>
-                    <input type="text" class="form-control" formControlName="cp">
-                    <div class="alert alert-danger" *ngIf="userForm.controls['adresse'].controls['cp'].hasError('pattern')">
-                        Postal code format is five digits
-                    </div>
-                </div>
+            <div class="form-group">
+                <label for="telephone">Telephone</label>
+                <input type="text" class="form-control" formControlName="telephone">
+            </div>
+            <div class="form-group">
+                <label for="message">Votre message</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3" formControlName="message"></textarea>
             </div>
             <button type="submit" [disabled]="!userForm.valid" class="btn btn-primary">Submit</button>
         </form>
