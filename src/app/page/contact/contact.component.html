@@ -4,7 +4,7 @@
             <p class="col-xs-12 text-center">Vous desirez discuter un moment?</p>
             <p class="col-xs-12 text-center">Vous etes sur au bon endroit ?</p>
         </div>
-        <form [formGroup]="userForm" method="POST" action="mailto:cy.etievant@gmail.com" (ngSubmit)="onSubmit()">
+        <form [formGroup]="userForm" method="POST" action="mail.php" (ngSubmit)="onSubmit()">
             <div class="form-group">
                 <label>Nom</label>
                 <input type="text" #refNom class="form-control" formControlName="nom">
@@ -44,7 +44,7 @@
             <div class="form-group">
                 <label for="message">Votre message</label>
                 <textarea class="form-control" id="exampleTextarea" rows="3" formControlName="message"></textarea>
-              </div>
+            </div>
             <button type="submit" [disabled]="!userForm.valid" class="btn btn-primary">Submit</button>
         </form>
     </div>
