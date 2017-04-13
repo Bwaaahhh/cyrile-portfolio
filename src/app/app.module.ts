@@ -4,7 +4,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { Routing } from './app.routes';
-
 import { HomeComponent } from './page/home/home.component';
 import { SkillComponent } from './page/skill/skill.component';
 import { ContactComponent } from './page/contact/contact.component';
