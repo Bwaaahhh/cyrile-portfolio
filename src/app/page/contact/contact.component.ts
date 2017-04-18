@@ -25,30 +25,24 @@ export class ContactComponent{
         this.http = http;
     }
 
+    // getFriends() {
+    //     return this.http.request('./mail.json')
+    //         .map(res => res.json()
+    //
+    //     );
+    //     console.log(res);
+    // }
+
+
     userForm = new FormGroup({
-        nom: new FormControl(null),
-        prenom: new FormControl(null),
-        email: new FormControl(null),
-        telephone: new FormControl(null),
-        message: new FormControl(null)
+        nom: new FormControl(null, [Validators.required, Validators.minLength(3), Validators.maxLength(10)]),
+        prenom: new FormControl(null, [Validators.required, Validators.minLength(3), Validators.maxLength(10)]),
+        email: new FormControl(null, [Validators.required, Validators.pattern('^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$')]),
+        telephone: new FormControl(null,[Validators.required, Validators.pattern('^[0-9]{10}$')]),
+        message: new FormControl(null, [Validators.required, Validators.minLength(20)])
     });
 
     onSubmit(){
-
-//         let body = new URLSearchParams();
-//
-//         body.set('email', this.userForm.value.email);
-//         body.set('name', this.userForm.value.nom);
-//         body.set('message', this.userForm.value.message);
-//         application/x-www-form-urlencoded
-
-
-        // this.http.post(this.endpoint, body, options)
-        //     .subscribe(
-        //         response => console.log(response)
-        //     )
-
-
 
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');

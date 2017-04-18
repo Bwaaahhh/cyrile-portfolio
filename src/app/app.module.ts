@@ -8,6 +8,7 @@ import { HomeComponent } from './page/home/home.component';
 import { SkillComponent } from './page/skill/skill.component';
 import { ContactComponent } from './page/contact/contact.component';
 import { ProjetComponent } from './page/projet/projet.component' ;
+import 'rxjs/add/operator/map';
 
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome';
 

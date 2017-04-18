@@ -43,3 +43,5 @@ cordova/*
 src/styles.css.map
 
 cordova/*
+mail.php
+project.php
