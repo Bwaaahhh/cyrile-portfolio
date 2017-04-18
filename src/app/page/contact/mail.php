@@ -1,10 +1,4 @@
 <?php
-// $recipient = 'cy.etievant@gmail.com';
-// $subject = 'new message\n';
-// $headers = "From: \n";
-// $message = '$params->message\n';
-// mail($recipient, 'mon sujet', 'lala');
-
 switch($_SERVER['REQUEST_METHOD']){
     case("OPTIONS"): //Allow preflighting to take place.
         header("Access-Control-Allow-Origin: *");
@@ -21,8 +15,6 @@ switch($_SERVER['REQUEST_METHOD']){
         $mail = $params["email"];
         $messagee = $params["message"];
 
-
-    //    $name = $params->name;
         $message =  'Tu as recu un message de '.$prenom.''.$nom.' qui te dis '.$messagee.'. Tu peux le joindre au '.$telephone.' ou alors ici '.$mail.'';
 
         $recipient = 'cy.etievant@gmail.com';

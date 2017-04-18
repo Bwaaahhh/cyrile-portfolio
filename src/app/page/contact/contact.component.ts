@@ -21,9 +21,6 @@ export class ContactComponent{
     message: string;
     endpoint : string;
 
-
-
-
     constructor( private http : Http) {
         this.http = http;
     }
@@ -43,9 +40,14 @@ export class ContactComponent{
 //         body.set('email', this.userForm.value.email);
 //         body.set('name', this.userForm.value.nom);
 //         body.set('message', this.userForm.value.message);
-//
-// console.log(body);
-//application/json   application/x-www-form-urlencoded
+//         application/x-www-form-urlencoded
+
+
+        // this.http.post(this.endpoint, body, options)
+        //     .subscribe(
+        //         response => console.log(response)
+        //     )
+
 
 
         let headers = new Headers();
@@ -54,10 +56,6 @@ export class ContactComponent{
 
         this.endpoint = "http://cyrile.marmier.codeur.online/mail.php";
 
-        // this.http.post(this.endpoint, body, options)
-        //     .subscribe(
-        //         response => console.log(response)
-        //     )
 
         let postVars = {
             nom : this.userForm.value.nom,
@@ -74,16 +72,4 @@ export class ContactComponent{
 
 
     }
-
-
-    // ngOnInit() {
-    //     //This data could really come from some inputs on the interface - but let's keep it simple.
-    //     this.email = "cy.etievant@gmail.com";
-    //     this.name = "Hayden Pierce";
-    //     this.message = "Hello, this is Hayden.";
-    //     //Start php via the built in server: $ php -S localhost:8000
-    //         this.endpoint = "http://cyrile.marmier.codeur.online/mail.php";
-    // }
-
-
 }
