@@ -1,17 +1,20 @@
-main{
+#home{
     font-family: $fontf;
     .color{
         color : $red;
     }
     #premierPres{
-        margin-top: 15%;
+        margin-top: 5%;
+        .intro{
+            margin-bottom: 0;
+        }
     }
     #deuxiemePres{
-        margin-top: 5%;
-        margin-bottom: 5%;
+        margin-top: 6%;
+        margin-bottom: 4.5%;
     }
     #troisiemePres{
-        margin-bottom: 5%;
+        margin-bottom: 4.5%;
         #dernierePhrase{
             margin-bottom: 8%;
         }
