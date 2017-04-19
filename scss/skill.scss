@@ -1,12 +1,22 @@
 #skill{
-    text-align: center;
-    .iconeg{
-        margin-left: 5%;
-    }
     p{
         font-family: $fontf;
     }
-    #foundation{
-        margin-left: 3px;
+    .intro{
+        margin-top: 12%;
+        margin-bottom: 6%;
+    }
+    .iconeg{
+        margin-left: 5%;
+    }
+    // #foundation{
+    //     margin-left: 3px;
+    // }
+    .iconeg2{
+        margin-left: 22%;
+    }
+    .paragraphe{
+        margin-top: 5%;
+        margin-bottom: 6%;
     }
 }

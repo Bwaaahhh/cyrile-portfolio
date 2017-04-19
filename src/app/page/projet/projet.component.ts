@@ -14,7 +14,7 @@ export class ProjetComponent {
     constructor( private http : Http) {
     }
     ngOnInit(){
-        this.http.get(`http://cyrile.marmier.codeur.online/project.php`)
+        this.http.get(`http://cyrile.marmier.codeur.online/portfolio/project.php`)
         .subscribe(result => this.data = result.json());
     }
 }

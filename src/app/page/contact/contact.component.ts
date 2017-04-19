@@ -48,7 +48,7 @@ export class ContactComponent{
         headers.append('Content-Type', 'application/json');
         let options = new RequestOptions({ headers: headers });
 
-        this.endpoint = "http://cyrile.marmier.codeur.online/mail.php";
+        this.endpoint = "http://cyrile.marmier.codeur.online/portfolio/mail.php";
 
 
         let postVars = {
