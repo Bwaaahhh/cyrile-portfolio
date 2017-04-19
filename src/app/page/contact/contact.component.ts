@@ -11,8 +11,8 @@ import { RequestOptions, URLSearchParams, Headers , Http}    from '@angular/http
     'input.ng-pristine {border-left: 1px solid grey;}',
     'textarea.ng-invalid {border-left: 5px solid red;}',
     'textarea.ng-valid {border-left:5px solid green;}',
-    'textarea.ng-pristine {border-left: 1px solid grey;}']
-  // styleUrls: ['../../app.component.css']
+    'textarea.ng-pristine {border-left: 1px solid grey;}'],
+  styleUrls: ['../../app.component.css']
 })
 export class ContactComponent{
 

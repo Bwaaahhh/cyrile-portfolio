@@ -1,4 +1,4 @@
-<main id="contact">
+<!-- <main id="contact">
     <div class="container">
         <div class="row">
             <p class="col-xs-12 text-center">Vous desirez discuter un moment?</p>
@@ -46,31 +46,29 @@
             <button type="submit" [disabled]="!userForm.valid" class="btn btn-primary">Submit</button>
         </form>
     </div>
-</main>
+</main> -->
 
 
-
-
-
-<!-- <main>
-    <div id="contact" class="container">
+<main  id="contact">
+    <div class="container">
         <div class="row">
-            <form class="" action="" method="">
+            <form [formGroup]="userForm" method="POST" (ngSubmit)="onSubmit()">
                 <p class="col-xs-12 text-center" id="intro">Bonjour Cyril,</p>
                 <p id="obligation"><span class="error col-xs-12 text-center">* Champs Obligatoires.</span></p>
                 <div class="col-xs-12 text-center columns end" id="formPremiere">
                     <p class="">Je suis </p>
-                    <input id="nameForm" class="inputForm" type="text" name="nomPerso" value="nom & Prenom">
+                    <input id="nameForm" type="text" name="nom" #refNom class="form-control inputForm" formControlName="nom">
+                    <input id="nameForm" type="text" #refPrenom class="form-control" formControlName="prenom">
                     <i class="fa fa-pencil" aria-hidden="true"></i>
                     <p> et je vous contacte</p>
                 </div>
-                <div class="" id="formDeuxieme">
+                <!-- <div class="" id="formDeuxieme">
                     <p> de la part de</p>
                     <input id="societeForm" class="inputForm" type="text" name="nomSociete" value="nom de la société">
                     <i class="fa fa-pencil" aria-hidden="true"></i>
                     <p>pour discuter</p>
-                </div>
-                <div class="" id="formTroisieme">
+                </div> -->
+                <!-- <div class="" id="formTroisieme">
                     <p>d'un(e)</p>
                     <select class="selectForm" name="offre">
                         <option value="projet">projet</option>
@@ -78,18 +76,22 @@
                         <option value="entretien">entretien</option>
                         <option value="secret">... c'est secret</option>
                     </select>.
-                </div>
+                </div> -->
                 <p>Merci d'avance de bien vouloir me répondre</p>
                 <div class="" id="formQuatre">
                     <p>à</p>
-                    <input id="mailForm" class="inputForm" type="text" name="mail" value="adresse e-mail">
+                    <input id="mailForm" type="email" name="email" class="form-control inputForm" formControlName="email">
                     <i class="fa fa-pencil" aria-hidden="true"></i>
                     <p> ou bien contactez-moi</p>
                 </div>
                 <div class="" id="formCinq">
                     <p>simpement par téléphone au</p>
-                    <input id="phoneForm" class="inputForm" type="text" name="phone" value="+33">
+                    <input id="phoneForm" type="text" class="form-control inputForm" formControlName="telephone">
                     <i class="fa fa-pencil" aria-hidden="true"></i>
+                </div>
+                <div class="form-group">
+                    <label for="message">Votre message</label>
+                    <textarea class="form-control" name="message" id="exampleTextarea" rows="3" formControlName="message"></textarea>
                 </div>
                 <div class="row bye">
                     <p class="large-2 large-centered columns">À bientot</p>
@@ -99,9 +101,10 @@
                 </div>
                 <div class="row" id="formButton">
                     <button class="large-3 columns large-offset-2" id="resetForm">réinitialiser le message</button>
+                    <button type="submit" [disabled]="!userForm.valid" class="btn btn-primary">Submit</button>
                     <button class="large-3 large-offset-2 columns end" name="submit" type="submit">envoyer le message</button>
                 </div>
             </form>
         </div>
     </div>
-</main> -->
+</main>

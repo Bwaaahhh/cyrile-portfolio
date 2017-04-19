@@ -1,75 +1,75 @@
 #contact{
-    // text-align: center;
-    // font-size : $fontSize ;
-    // font-family : $fontf ;
-    // margin-top: 5%;
-    // p{
-    //     display :inline;
-    // }
-    // input{
-    //     display : inline ;
-    //     color : $red;
-    //     font-size: 1rem;
-    //     width : 35%;
-    //     border : none ;
-    //     box-shadow: none ;
-    //     border-bottom: 1px solid $red ;
-    //     margin-right: 2%;
-    //     margin-left: 2%;
-    // }
-    // i{
-    //     color : $red ;
-    //     font-size: 1rem;
-    //     margin-right: 1%;
-    // }
-    // .error{
-    //     font-size: 0.8rem;
-    // }
-    // #obligation{
-    //     display: block;
-    // }
-    // #formPremiere{
-    //     margin-top: 5%;
-    // }
-    // #formTroisieme{
-    //     margin-bottom: 5%;
-    //     select{
-    //         display : inline ;
-    //         width : 35% ;
-    //         height: auto;
-    //         color : $red ;
-    //         border : none;
-    //         padding-right: 0;
-    //         box-shadow: none ;
-    //         font-size: 1rem;
-    //         appearance:none;
-    //         -moz-appearance:none; /* Firefox */
-    //         -webkit-appearance: none;
-    //         background: url(./../assets/images/arrow-down.png) no-repeat right;
-    //         background-position-x: 80px;
-    //     }
-    //     select:focus{
-    //         outline: none;
-    //         border : none;
-    //     }
-    // }
-    // .bye{
-    //     margin-top: 5%;
-    //     margin-bottom: 5%;
-    // }
-    // #formButton{
-    //     font-size: 0.8rem;
-    //     margin-top: 7%;
-    //     margin-bottom: 5%;
-    //     button{
-    //         text-transform: uppercase;
-    //         padding-bottom: 3%;
-    //         border-bottom: 5px solid transparent;
-    //     }
-    //     button:hover{
-    //         color: red;
-    //         border-bottom: 5px solid red;
-    //     }
-    // }
+    text-align: center;
+    font-size : $fontSize ;
+    font-family : 1rem; ;
+    margin-top: 5%;
+    p{
+        display :inline;
+    }
+    input{
+        display : inline ;
+        color : $red;
+        font-size: 1rem;
+        width : 35%;
+        border : none ;
+        box-shadow: none ;
+        border-bottom: 1px solid $red ;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    i{
+        color : $red ;
+        font-size: 1rem;
+        margin-right: 1%;
+    }
+    .error{
+        font-size: 0.8rem;
+    }
+    #obligation{
+        display: block;
+    }
+    #formPremiere{
+        margin-top: 5%;
+    }
+    #formTroisieme{
+        margin-bottom: 5%;
+        select{
+            display : inline ;
+            width : 35% ;
+            height: auto;
+            color : $red ;
+            border : none;
+            padding-right: 0;
+            box-shadow: none ;
+            font-size: 1rem;
+            appearance:none;
+            -moz-appearance:none; /* Firefox */
+            -webkit-appearance: none;
+            background: url(./../assets/images/arrow-down.png) no-repeat right;
+            background-position-x: 80px;
+        }
+        select:focus{
+            outline: none;
+            border : none;
+        }
+    }
+    .bye{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #formButton{
+        font-size: 0.8rem;
+        margin-top: 7%;
+        margin-bottom: 5%;
+        button{
+            text-transform: uppercase;
+            padding-bottom: 3%;
+            border-bottom: 5px solid transparent;
+        }
+        button:hover{
+            color: red;
+            border-bottom: 5px solid red;
+        }
+    }
 
 }

@@ -1,10 +1,9 @@
 <main id="project">
-
         <p class="small-12 intro text-center">J'ai pu durant ma formation et sur mon temps personnel réaliser différent projet.</p>
         <ul>
     		<li *ngFor="let project of data">
                 <div class="row" id="oneProject">
-                    <div class="small-12 column end">
+                    <div class="small-12 medium-8 column end">
                         <img class="img-responsive" src="././assets/images/{{project.image}}" alt="">
                     </div>
                     <div class="small-12 column text-center nomProject">
@@ -16,7 +15,7 @@
                         <div *ngIf="project.id_projet">
                             <div class="text-center">
                                 <p>{{project.description}}</p>
-                                <p>Pour le voir c'est <a href="{{project.lien}}">ici</a></p>
+                                <p>Pour le voir c'est <a href="{{project.lien}}" target="_blank">ici</a></p>
                             </div>
                         </div>
                     </div>
