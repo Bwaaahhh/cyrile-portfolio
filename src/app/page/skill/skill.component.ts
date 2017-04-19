@@ -6,7 +6,5 @@ import {Component} from '@angular/core';
   styleUrls: ['../../app.component.css']
 })
 export class SkillComponent {
-    testClick() {
-        console.log('pouet');
-    }
+    // show: boolean = true;
 }

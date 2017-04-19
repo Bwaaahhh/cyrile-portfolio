@@ -7,16 +7,21 @@
                     <div class="small-12 column end">
                         <img class="img-responsive" src="././assets/images/{{project.image}}" alt="">
                     </div>
-                    <div class="small-6 column">
-                        <p>{{project.nom}} - {{project.annee_prod}}</p>
-                        <p>{{project.role}}</p>
+                    <div class="small-12 column text-center nomProject">
+                        <p>{{project.nom}} - {{project.annee_prod}} - {{project.role}}</p>
+                        <p>{{project.hastag}}</p>
+                        <button class="show" (click)="project.id_projet = !project.id_projet">{{project.id_projet ? 'Masquer les informations' : 'Pour en savoir davantage sur ce projet'}}</button>
                     </div>
-                    <div class="small-6 column end">
-                        <p>{{project.description}}</p>
-                        <p>Pour le voir c'est <a href="{{project.lien}}">ici</a></p>
+                    <div class="small-12 column end descriptionProject">
+                        <div *ngIf="project.id_projet">
+                            <div class="text-center">
+                                <p>{{project.description}}</p>
+                                <p>Pour le voir c'est <a href="{{project.lien}}">ici</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
     		</li>
         </ul>
-    
+
 </main>
