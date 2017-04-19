@@ -1,10 +1,10 @@
 <main id="project">
-    <div class="container">
-        <p>J'ai pu durant ma formation et sur mon temps personnel réaliser différent projet.</p>
+
+        <p class="small-12 intro text-center">J'ai pu durant ma formation et sur mon temps personnel réaliser différent projet.</p>
         <ul>
     		<li *ngFor="let project of data">
                 <div class="row" id="oneProject">
-                    <div class="small-12 column">
+                    <div class="small-12 column end">
                         <img class="img-responsive" src="././assets/images/{{project.image}}" alt="">
                     </div>
                     <div class="small-6 column">
@@ -18,5 +18,5 @@
                 </div>
     		</li>
         </ul>
-    </div>
+    
 </main>

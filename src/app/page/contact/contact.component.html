@@ -8,7 +8,6 @@
             <div class="form-group">
                 <label>Nom</label>
                 <input type="text" name="nom" #refNom class="form-control" formControlName="nom">
-                <b>{{refNom.className}}</b>
                 <div class="alert alert-danger" *ngIf="userForm.controls['nom'].hasError('required') && ( userForm.controls['nom'].touched)">
                     Merci de rentrer un nom
                 </div>
@@ -22,7 +21,6 @@
             <div class="form-group">
                 <label>Prenom</label>
                 <input type="text" #refPrenom class="form-control" formControlName="prenom">
-                <b>{{refPrenom.className}}</b>
                 <div class="alert alert-danger" *ngIf="userForm.controls['prenom'].hasError('required') && ( userForm.controls['prenom'].touched)">
                     Merci de rentrer un prénom
                 </div>
