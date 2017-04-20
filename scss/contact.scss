@@ -25,28 +25,28 @@
         box-shadow:0 0 2px rgba(0,0,0,.5);
     }
     .erreur1{
-        margin-top: -19%;
-        margin-left: -33%;
+        margin-top: -6%;
+        margin-left: -63%;
         font-size: 0.7rem;
     }
     .erreur5{
-        margin-top: -19%;
+        margin-top: -28%;
         margin-left: -23%;
         font-size: 0.7rem;
     }
     .erreur2{
-        margin-top: -4%;
-        margin-left: -25%;
+        margin-top: -5%;
+        margin-left: -37%;
         font-size: 0.9rem;
     }
     .erreur3{
-        margin-top: -4%;
-        margin-left: -25%;
+        margin-top: -5%;
+        margin-left: -36%;
         font-size: 0.8rem;
     }
     .erreur4{
-        margin-top: -4%;
-        margin-left: -11%;
+        margin-top: -5%;
+        margin-left: -26%;
         font-size: 0.8rem;
     }
     .error{
@@ -98,15 +98,15 @@
     }
 
 }
-@media screen and (max-width: 380px){
+@media screen and (min-width: 374px){
     #contact{
         .erreur1{
-            margin-top: -21%;
-            margin-left: -47%;
+            margin-top: -4%;
+            margin-left: -59%;
             font-size: 0.6rem;
         }
         .erreur5{
-            margin-top: -21%;
+            margin-top: -18%;
             margin-left: -28%;
             font-size: 0.6rem;
         }
@@ -117,6 +117,8 @@
         }
         .erreur3{
             font-size: 0.7rem;
+            margin-top: -4%;
+            margin-left: -20%;
         }
         .erreur4{
             margin-left: -18%;
@@ -177,7 +179,7 @@
     }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1025px) {
+@media screen and (min-width: 900px) {
     #contact{
         font-size: 1.8rem;
         #text{

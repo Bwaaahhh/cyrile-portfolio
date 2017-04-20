@@ -1,8 +1,13 @@
 #skill{
     font-family: $fontf;
+    text-align: center;
     .intro{
         margin-top: 12%;
         margin-bottom: 6%;
+    }
+    img{
+        margin-right: auto;
+        margin-left: auto;
     }
     .iconeg{
         margin-left: 5%;
@@ -19,5 +24,10 @@
     }
     .lastSkill{
         margin-bottom: 5%;
+    }
+}
+@media screen and (min-width: 767px) {
+    #skill{
+        font-size: 1.5rem;
     }
 }
