@@ -15,6 +15,13 @@
             #oneProject{
                 border-top: 2px red solid ;
                 padding-top: 5%;
+                margin-top: 6%;
+                .titreProjet{
+                    font-size: 0.9rem;
+                }
+                .ecritureProjet{
+                    background-color: lightgrey;
+                }
                 .nomProject{
                     padding-top: 5%;
                     button{

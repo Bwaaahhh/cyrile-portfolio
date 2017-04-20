@@ -3,12 +3,14 @@
         <ul>
     		<li *ngFor="let project of data">
                 <div class="row" id="oneProject">
+                    <div class="small-12 text-center titreProjet">
+                        <p class="ecritureProjet" >{{project.nom}} - {{project.annee_prod}} - {{project.role}}</p>
+                    </div>
                     <div class="small-12 medium-8 column end">
                         <img class="img-responsive" src="http://cyrile.marmier.codeur.online/portfolio/{{project.image}}" alt="">
                     </div>
                     <div class="small-12 column text-center nomProject">
-                        <p>{{project.nom}} - {{project.annee_prod}} - {{project.role}}</p>
-                        <p>{{project.hastag}}</p>
+                        <p class="ecritureProjet">{{project.hastag}}</p>
                         <button class="show" (click)="project.id_projet = !project.id_projet">{{project.id_projet ? 'Masquer les informations' : 'Pour en savoir davantage sur ce projet'}}</button>
                     </div>
                     <div class="small-12 column end descriptionProject">
