@@ -1,12 +1,16 @@
 footer{
     background-color: black;
+    font-family: $fontf;
     color: white;
     width: 100%;
     font-size: 0.65rem;
-    padding-top: 7%;
-    padding-bottom: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     #lien{
         margin-bottom: 5%;
+        img{
+            display: inline-block;
+        }
     }
     i {
         display: inline-block;
@@ -16,5 +20,10 @@ footer{
     }
     .iconegfooter{
         margin-left: 5%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 1025px) {
+    footer{
+        font-size: 1.5rem;
     }
 }

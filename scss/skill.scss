@@ -1,12 +1,33 @@
 #skill{
+    font-family: $fontf;
     text-align: center;
+    .intro{
+        margin-top: 12%;
+        margin-bottom: 6%;
+    }
+    img{
+        margin-right: auto;
+        margin-left: auto;
+    }
     .iconeg{
         margin-left: 5%;
     }
-    p{
-        font-family: $fontf;
+    // #foundation{
+    //     margin-left: 3px;
+    // }
+    .iconeg2{
+        margin-left: 22%;
     }
-    #foundation{
-        margin-left: 3px;
+    .paragraphe{
+        margin-top: 5%;
+        margin-bottom: 6%;
+    }
+    .lastSkill{
+        margin-bottom: 5%;
+    }
+}
+@media screen and (min-width: 767px) {
+    #skill{
+        font-size: 1.5rem;
     }
 }

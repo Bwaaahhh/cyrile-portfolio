@@ -1,9 +1,49 @@
 #project{
+    font-family: $fontf;
+    .intro{
+        margin-top: 12%;
+        margin-bottom: 5%;
+    }
     ul{
         list-style-type: none;
-        #oneProject{
-            border-top: 2px red solid ;
-            padding-top: 5%;
+        margin-left: 0;
+        li{
+            img{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #oneProject{
+                border-top: 2px red solid ;
+                padding-top: 5%;
+                margin-top: 6%;
+                .titreProjet{
+                    font-size: 0.9rem;
+                }
+                .ecritureProjet{
+                    background-color: lightgrey;
+                }
+                .nomProject{
+                    padding-top: 5%;
+                    button{
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 8%;
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media screen and (min-width: 500px) and (max-width: 1025px) {
+    #project{
+        font-size: 1.5rem;
+        ul{
+            li{
+                img{
+                    margin-left: 27%;
+                }
+            }
         }
     }
 }
